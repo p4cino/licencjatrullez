@@ -42,3 +42,7 @@
       /** Unhide lightbox **/
       display: block;
     }
+
+    footer {
+        margin-top: 200px;
+    }

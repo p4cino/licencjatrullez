@@ -16,6 +16,7 @@ $ACL = Array(
     'cinemaOwner' => array(
         'dashboard', 'ticket', 'addTicket', 'editTicket',
         'movie', 'addMovie', 'editMovie', 'seance', 'addSeanceDate',
+        'addMovieDate',
         'addCinemaRoom', 'addRowSeat', 'editSeance', 'addEmployee', 'logout'
     ),
     'admin' => array('dashboard', 'addCinema', 'role', 'deleteUser', '', 'logout')
@@ -38,28 +39,28 @@ switch ($User->getRole()) {
         break;
 
     case 2:
-        //Moderator
+        //Pracownik kina
         $access = $ACL['mod'];
         $folder = './templates/mod/';
-        $start = 'pm';
+        $start = 'dashboard';
         break;
     case 3:
-        //Administrator
+        //Właściciel Kina
         $access = $ACL['cinemaOwner'];
         $folder = './templates/cinemaOwner/';
         $start = 'dashboard';
         break;
     case 4:
-        //Administrator
+        //Moderator strony
         $access = $ACL['admin'];
         $folder = './templates/admin/';
-        $start = 'pa';
+        $start = 'dashboard';
         break;
     case 5:
-        //Administrator
+        //Administrator strony
         $access = $ACL['admin'];
         $folder = './templates/admin/';
-        $start = 'pa';
+        $start = 'dashboard';
         break;
     default:
         $access = $ACL['guest'];

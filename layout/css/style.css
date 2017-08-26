@@ -31,3 +31,7 @@ html {
   background-size: cover;
   color: white;
 }
+
+.mapa {
+  height: 20vh;
+}
