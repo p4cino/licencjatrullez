@@ -30,7 +30,7 @@
 
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="#bg1">Home</a>
+					<a class="nav-link" href="/">Home</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="cinema">Lista Kin</a>
@@ -119,7 +119,7 @@
 
 	<?php
 	if (!empty($_POST)) {
-		if ($_GET['s2'] == "login") {
+		if (isset($_GET['s2']) && $_GET['s2'] == "login") {
 			fx('logowanie');
 			if (!empty($_POST['email'])) {
 				$user = logowanie($_POST['email'], $_POST['password']);
@@ -134,7 +134,7 @@
 			}
 		}
 	}
-	if ($_GET['s2'] == "register") {
+	if (isset($_GET['s2']) && $_GET['s2'] == "register") {
 		fx('rejestracja');
 		if(!empty($_POST['email'])){
 			$wynik = rejestracja($_POST['email'], $_POST['password1'], $_POST['password2'], $_POST['name'], $_POST['surname'], $_POST['telephone']);

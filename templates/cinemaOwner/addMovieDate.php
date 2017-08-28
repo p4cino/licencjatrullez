@@ -44,7 +44,7 @@ $tomorrow = new DateTime('tomorrow');
                 <select class="custom-select" name="movie">
                     <?php
                     $db = DataBase::getDB();
-                    $zap = $db->prepare("SELECT * FROM movie WHERE cinema_id = " . $User->getCinemaOwner());
+                    $zap = $db->prepare("SELECT movie_showing.id, movie.movie_name FROM movie_showing INNER JOIN movie ON movie_showing.id = movie.id WHERE movie_showing.cinema_id = " . $User->getCinemaOwner());
                     $zap->execute();
                     while ($tab = $zap->fetch()) {
                         echo "<option value='" . $tab['id'] . "'>" . $tab['movie_name'] . "</option>";

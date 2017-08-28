@@ -9,7 +9,7 @@ require_once('./var/ustawienia.php');
 $ACL = Array(
     'guest' => array(
         'home', 'logowanie', 'rejestracja', 'cinema', 'movie',
-        'cinema'
+        'cinema', 'reservation', 'room'
     ),
     'user' => array('dashboard', 'ticket', 'logout'),
     'mod' => array('dashboard', 'akceptacja', 'uzytkownicy', 'logout'),
@@ -19,7 +19,7 @@ $ACL = Array(
         'addMovieDate',
         'addCinemaRoom', 'addRowSeat', 'editSeance', 'addEmployee', 'logout'
     ),
-    'admin' => array('dashboard', 'addCinema', 'role', 'deleteUser', '', 'logout')
+    'admin' => array('dashboard', 'addCinema', 'role', 'deleteUser', 'logout')
 );
 
 //tworzenie obiektu uzytkownik

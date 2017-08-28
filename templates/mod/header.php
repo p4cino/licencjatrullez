@@ -5,10 +5,7 @@
 	<title>Administrator</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<?php 
-	echo "<base href='".WWW."'>";
-		//pod tym ładowanie cssów w headzie bo inaczej przez "ładne adresy" /plik/zmienna/zmienna skrypty nie będą wiedzieć w jakim są katalogu
-	?>
+	<?php echo "<base href='".WWW."'>"; ?>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel='stylesheet prefetch' href='./layout/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css'>
 	<script src='./layout/js/tether.min.js'></script>
@@ -29,13 +26,10 @@
 
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="pm">Panel Moderatora</a>
+					<a class="nav-link" href="/">Panel Moderatora</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="akceptacja">Rezerwacje do akceptacji</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="uzytkownicy">Usuwanie uzytkowników</a>
 				</li>
 			</ul>
 

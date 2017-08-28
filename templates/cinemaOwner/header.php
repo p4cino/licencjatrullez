@@ -47,10 +47,16 @@
 					<a class="nav-link" href="addSeanceDate">Dodawanie daty seansów</a>
 				</li>
                 <li class="nav-item">
+                    <a class="nav-link" href="addMovieDate">Dodawanie godzin projekcji</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="addCinemaRoom">Dodawanie Sal</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="addRowSeat">Dodawanie rzędów</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="addEmployee">Dodawanie pracowników</a>
                 </li>
 			</ul>
 
