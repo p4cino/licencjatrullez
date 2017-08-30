@@ -19,7 +19,7 @@
         $array = array();
         $i = 0;
         while ($tab = $zap->fetch()) {
-            echo ''.$tab['seance_hours'].'  <a href="room/'.$tab['id'].'" class="btn btn-outline-info">Rezerwacja</a><br /><br />';
+            echo ''.$tab['seance_hours'].'  <a href="room/'.$tab['id'].'/'.$_GET['s3'].'" class="btn btn-outline-info">Rezerwacja</a><br /><br />';
         }
     }
     ?>
