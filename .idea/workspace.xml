@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e4d757f-4aa3-4358-a1f9-dcf1787ea3a9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/user/cinema.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/user/reservation.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/user/room.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/user/rezerwacja.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/user/testowe.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/user/tor.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/user/tory.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout/style1.css" afterPath="$PROJECT_DIR$/layout/style1.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/guest/cinema.php" afterPath="$PROJECT_DIR$/templates/guest/cinema.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/guest/header.php" afterPath="$PROJECT_DIR$/templates/guest/header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/guest/reservation.php" afterPath="$PROJECT_DIR$/templates/guest/reservation.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/guest/room.php" afterPath="$PROJECT_DIR$/templates/guest/room.php" />
     </list>
@@ -16,34 +24,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="room.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="room.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/guest/room.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="53" column="33" lean-forward="false" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+            <state relative-caret-position="374">
+              <caret line="22" column="41" lean-forward="true" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
               <folding>
-                <marker date="1504111490550" expanded="true" signature="105:154" ph="SELECT id FR... reservation_seat" />
-                <marker date="1504111490550" expanded="true" signature="105:187" ph="SELECT id FR... reservation_seat" />
-                <marker date="1504111490550" expanded="true" signature="105:214" ph="SELECT id FR... reservation_seat" />
-                <marker date="1504111490550" expanded="true" signature="105:241" ph="SELECT id FR... reservation_seat" />
-                <marker date="1504111490550" expanded="true" signature="105:243" ph="SELECT id FR... reservation_seat" />
-                <marker date="1504111490550" expanded="true" signature="105:244" ph="SELECT id FR... reservation_seat" />
-                <marker date="1504111490550" expanded="true" signature="105:250" ph="SELECT id FR... reservation_seat" />
-                <marker date="1504111490550" expanded="true" signature="694:705" ph="..." />
-                <marker date="1504111490550" expanded="true" signature="792:827" ph="SELECT * FRO... seance" />
-                <marker date="1504111490550" expanded="true" signature="1188:1230" ph="SELECT * FRO... row_seat" />
-                <marker date="1504111490550" expanded="true" signature="1188:1231" ph="SELECT * FRO... row_seat" />
-                <marker date="1504111490550" expanded="true" signature="1711:2042" ph="..." />
-                <marker date="1504111490550" expanded="true" signature="1760:2002" ph="..." />
-                <marker date="1504111490550" expanded="true" signature="2146:2489" ph="..." />
-                <marker date="1504111490550" expanded="true" signature="2195:2449" ph="..." />
-                <marker date="1504111490550" expanded="true" signature="2844:2955" ph="SELECT showi... movie_showing" />
-                <marker date="1504111490550" expanded="true" signature="2904:2954" ph="SELECT `movi... seance" />
-                <marker date="1504111490550" expanded="true" signature="3170:3724" ph="..." />
-                <marker date="1504111490550" expanded="true" signature="3201:3519" ph="..." />
-                <marker date="1504111490550" expanded="true" signature="3321:3413" ph="..." />
-                <marker date="1504111490550" expanded="true" signature="3321:3510" ph="..." />
-                <marker date="1504111490550" expanded="true" signature="3545:3715" ph="..." />
+                <marker date="1504526938334" expanded="true" signature="154:203" ph="SELECT id FR... reservation_seat" />
+                <marker date="1504526938334" expanded="true" signature="154:236" ph="SELECT id FR... reservation_seat" />
+                <marker date="1504526938334" expanded="true" signature="154:263" ph="SELECT id FR... reservation_seat" />
+                <marker date="1504526938334" expanded="true" signature="154:290" ph="SELECT id FR... reservation_seat" />
+                <marker date="1504526938334" expanded="true" signature="154:292" ph="SELECT id FR... reservation_seat" />
+                <marker date="1504526938334" expanded="true" signature="154:293" ph="SELECT id FR... reservation_seat" />
+                <marker date="1504526938334" expanded="true" signature="154:299" ph="SELECT id FR... reservation_seat" />
+                <marker date="1504526938334" expanded="true" signature="742:753" ph="..." />
+                <marker date="1504526938334" expanded="true" signature="840:875" ph="SELECT * FRO... seance" />
+                <marker date="1504526938334" expanded="true" signature="1236:1278" ph="SELECT * FRO... row_seat" />
+                <marker date="1504526938334" expanded="true" signature="1236:1279" ph="SELECT * FRO... row_seat" />
+                <marker date="1504526938334" expanded="true" signature="1758:2089" ph="..." />
+                <marker date="1504526938334" expanded="true" signature="1807:2049" ph="..." />
+                <marker date="1504526938334" expanded="true" signature="2193:2536" ph="..." />
+                <marker date="1504526938334" expanded="true" signature="2242:2496" ph="..." />
+                <marker date="1504526938334" expanded="true" signature="2891:3004" ph="SELECT showi... movie_showing" />
+                <marker date="1504526938334" expanded="true" signature="2951:3000" ph="SELECT `movi... seance" />
+                <marker date="1504526938334" expanded="true" signature="2951:3003" ph="SELECT `movi... seance" />
+                <marker date="1504526938334" expanded="true" signature="3219:3773" ph="..." />
+                <marker date="1504526938334" expanded="true" signature="3250:3568" ph="..." />
+                <marker date="1504526938334" expanded="true" signature="3370:3462" ph="..." />
+                <marker date="1504526938334" expanded="true" signature="3370:3559" ph="..." />
+                <marker date="1504526938334" expanded="true" signature="3594:3764" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/guest/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="26" column="72" lean-forward="false" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
+              <folding>
+                <marker date="1504632911541" expanded="true" signature="5521:5725" ph="..." />
+                <marker date="1504632911541" expanded="false" signature="5629:5636" ph="×" />
+                <marker date="1504632911541" expanded="true" signature="6069:6264" ph="..." />
+                <marker date="1504632911541" expanded="false" signature="6176:6183" ph="×" />
+                <marker date="1504632911541" expanded="true" signature="6340:6531" ph="..." />
+                <marker date="1504632911541" expanded="false" signature="6446:6453" ph="×" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reservation.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/user/reservation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1504526668152" expanded="true" signature="182:343" ph="SELECT cinem... seance" />
+                <marker date="1504526668152" expanded="true" signature="679:757" ph="SELECT * FRO... seance" />
               </folding>
             </state>
           </provider>
@@ -52,19 +91,19 @@
       <file leaf-file-name="cinema.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/guest/cinema.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="34" column="61" lean-forward="true" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
+            <state relative-caret-position="340">
+              <caret line="20" column="48" lean-forward="false" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
               <folding>
-                <marker date="1504111362032" expanded="true" signature="122:142" ph="SELECT * FRO... cinema" />
-                <marker date="1504111362032" expanded="true" signature="254:267" ph="..." />
-                <marker date="1504111362032" expanded="true" signature="268:1221" ph="..." />
-                <marker date="1504111362032" expanded="true" signature="303:982" ph="data:" />
-                <marker date="1504111362032" expanded="true" signature="1031:1059" ph="..." />
-                <marker date="1504111362032" expanded="true" signature="1031:1060" ph="..." />
-                <marker date="1504111362032" expanded="true" signature="1031:1146" ph="..." />
-                <marker date="1504111362032" expanded="true" signature="1031:1214" ph="..." />
-                <marker date="1504111362032" expanded="true" signature="1301:1336" ph="SELECT * FRO... cinema" />
-                <marker date="1504111362032" expanded="true" signature="1737:1848" ph="SELECT * FRO... movie_showing" />
+                <marker date="1504524763301" expanded="true" signature="122:142" ph="SELECT * FRO... cinema" />
+                <marker date="1504524763301" expanded="true" signature="254:267" ph="..." />
+                <marker date="1504524763301" expanded="true" signature="268:1221" ph="..." />
+                <marker date="1504524763301" expanded="true" signature="303:982" ph="data:" />
+                <marker date="1504524763301" expanded="true" signature="1031:1059" ph="..." />
+                <marker date="1504524763301" expanded="true" signature="1031:1060" ph="..." />
+                <marker date="1504524763301" expanded="true" signature="1031:1146" ph="..." />
+                <marker date="1504524763301" expanded="true" signature="1031:1214" ph="..." />
+                <marker date="1504524763301" expanded="true" signature="1301:1336" ph="SELECT * FRO... cinema" />
+                <marker date="1504524763301" expanded="true" signature="1737:1848" ph="SELECT * FRO... movie_showing" />
               </folding>
             </state>
           </provider>
@@ -73,18 +112,23 @@
       <file leaf-file-name="reservation.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/guest/reservation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="75" lean-forward="false" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
+            <state relative-caret-position="272">
+              <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
               <folding>
-                <marker date="1504111400878" expanded="true" signature="182:322" ph="SELECT cinem... seance" />
-                <marker date="1504111400878" expanded="true" signature="658:665" ph="SELECT cinem... seance" />
-                <marker date="1504111400878" expanded="true" signature="658:706" ph="SELECT * FRO... seance" />
+                <marker date="1504526668152" expanded="true" signature="182:343" ph="SELECT cinem... seance" />
+                <marker date="1504526668152" expanded="true" signature="679:757" ph="SELECT * FRO... seance" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>s2</find>
+      <find>$_POST['date']</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -102,11 +146,11 @@
         <option value="$PROJECT_DIR$/templates/mod/pm.php" />
         <option value="$PROJECT_DIR$/templates/mod/header.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/templates/guest/header.php" />
         <option value="$PROJECT_DIR$/layout/style1.css" />
         <option value="$PROJECT_DIR$/templates/guest/cinema.php" />
         <option value="$PROJECT_DIR$/templates/guest/reservation.php" />
         <option value="$PROJECT_DIR$/templates/guest/room.php" />
+        <option value="$PROJECT_DIR$/templates/guest/header.php" />
       </list>
     </option>
   </component>
@@ -118,10 +162,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="255" />
-    <option name="y" value="1241" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -185,6 +229,12 @@
               <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="guest" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="cinema" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cinema" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="user" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -195,6 +245,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\cinema\templates\user" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -222,18 +277,19 @@
       <workItem from="1503849748834" duration="396000" />
       <workItem from="1503850279683" duration="7790000" />
       <workItem from="1503936565177" duration="10712000" />
-      <workItem from="1504102737793" duration="7353000" />
+      <workItem from="1504102737793" duration="8808000" />
+      <workItem from="1504524635205" duration="2021000" />
+      <workItem from="1504628868199" duration="1269000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34359000" />
+    <option name="totallyTimeSpent" value="39104000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="274" y="1072" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532943" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.253125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -270,28 +326,153 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1504111490550" expanded="true" signature="105:154" ph="SELECT id FR... reservation_seat" />
-            <marker date="1504111490550" expanded="true" signature="105:187" ph="SELECT id FR... reservation_seat" />
-            <marker date="1504111490550" expanded="true" signature="105:214" ph="SELECT id FR... reservation_seat" />
-            <marker date="1504111490550" expanded="true" signature="105:241" ph="SELECT id FR... reservation_seat" />
-            <marker date="1504111490550" expanded="true" signature="105:243" ph="SELECT id FR... reservation_seat" />
-            <marker date="1504111490550" expanded="true" signature="105:244" ph="SELECT id FR... reservation_seat" />
-            <marker date="1504111490550" expanded="true" signature="105:250" ph="SELECT id FR... reservation_seat" />
-            <marker date="1504111490550" expanded="true" signature="694:705" ph="..." />
-            <marker date="1504111490550" expanded="true" signature="792:827" ph="SELECT * FRO... seance" />
-            <marker date="1504111490550" expanded="true" signature="1188:1230" ph="SELECT * FRO... row_seat" />
-            <marker date="1504111490550" expanded="true" signature="1188:1231" ph="SELECT * FRO... row_seat" />
-            <marker date="1504111490550" expanded="true" signature="1711:2042" ph="..." />
-            <marker date="1504111490550" expanded="true" signature="1760:2002" ph="..." />
-            <marker date="1504111490550" expanded="true" signature="2146:2489" ph="..." />
-            <marker date="1504111490550" expanded="true" signature="2195:2449" ph="..." />
-            <marker date="1504111490550" expanded="true" signature="2844:2955" ph="SELECT showi... movie_showing" />
-            <marker date="1504111490550" expanded="true" signature="2904:2954" ph="SELECT `movi... seance" />
-            <marker date="1504111490550" expanded="true" signature="3170:3724" ph="..." />
-            <marker date="1504111490550" expanded="true" signature="3201:3519" ph="..." />
-            <marker date="1504111490550" expanded="true" signature="3321:3413" ph="..." />
-            <marker date="1504111490550" expanded="true" signature="3321:3510" ph="..." />
-            <marker date="1504111490550" expanded="true" signature="3545:3715" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="154:203" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:236" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:263" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:290" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:292" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:293" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:299" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="742:753" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="840:875" ph="SELECT * FRO... seance" />
+            <marker date="1504526938334" expanded="true" signature="1236:1278" ph="SELECT * FRO... row_seat" />
+            <marker date="1504526938334" expanded="true" signature="1236:1279" ph="SELECT * FRO... row_seat" />
+            <marker date="1504526938334" expanded="true" signature="1758:2089" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="1807:2049" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="2193:2536" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="2242:2496" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="2891:3004" ph="SELECT showi... movie_showing" />
+            <marker date="1504526938334" expanded="true" signature="2951:3000" ph="SELECT `movi... seance" />
+            <marker date="1504526938334" expanded="true" signature="2951:3003" ph="SELECT `movi... seance" />
+            <marker date="1504526938334" expanded="true" signature="3219:3773" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="3250:3568" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="3370:3462" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="3370:3559" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="3594:3764" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/guest/reservation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding>
+            <marker date="1504526668152" expanded="true" signature="182:343" ph="SELECT cinem... seance" />
+            <marker date="1504526668152" expanded="true" signature="679:757" ph="SELECT * FRO... seance" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/guest/cinema.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="48" lean-forward="false" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+          <folding>
+            <marker date="1504524763301" expanded="true" signature="122:142" ph="SELECT * FRO... cinema" />
+            <marker date="1504524763301" expanded="true" signature="254:267" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="268:1221" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="303:982" ph="data:" />
+            <marker date="1504524763301" expanded="true" signature="1031:1059" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="1031:1060" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="1031:1146" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="1031:1214" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="1301:1336" ph="SELECT * FRO... cinema" />
+            <marker date="1504524763301" expanded="true" signature="1737:1848" ph="SELECT * FRO... movie_showing" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/guest/room.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1504526938334" expanded="true" signature="154:203" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:236" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:263" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:290" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:292" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:293" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:299" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="742:753" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="840:875" ph="SELECT * FRO... seance" />
+            <marker date="1504526938334" expanded="true" signature="1236:1278" ph="SELECT * FRO... row_seat" />
+            <marker date="1504526938334" expanded="true" signature="1236:1279" ph="SELECT * FRO... row_seat" />
+            <marker date="1504526938334" expanded="true" signature="1758:2089" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="1807:2049" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="2193:2536" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="2242:2496" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="2891:3004" ph="SELECT showi... movie_showing" />
+            <marker date="1504526938334" expanded="true" signature="2951:3000" ph="SELECT `movi... seance" />
+            <marker date="1504526938334" expanded="true" signature="2951:3003" ph="SELECT `movi... seance" />
+            <marker date="1504526938334" expanded="true" signature="3219:3773" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="3250:3568" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="3370:3462" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="3370:3559" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="3594:3764" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/guest/reservation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="75" lean-forward="false" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
+          <folding>
+            <marker date="1504526668152" expanded="true" signature="182:343" ph="SELECT cinem... seance" />
+            <marker date="1504526668152" expanded="true" signature="679:757" ph="SELECT * FRO... seance" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/guest/cinema.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="61" lean-forward="true" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
+          <folding>
+            <marker date="1504524763301" expanded="true" signature="122:142" ph="SELECT * FRO... cinema" />
+            <marker date="1504524763301" expanded="true" signature="254:267" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="268:1221" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="303:982" ph="data:" />
+            <marker date="1504524763301" expanded="true" signature="1031:1059" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="1031:1060" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="1031:1146" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="1031:1214" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="1301:1336" ph="SELECT * FRO... cinema" />
+            <marker date="1504524763301" expanded="true" signature="1737:1848" ph="SELECT * FRO... movie_showing" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/guest/room.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1504526938334" expanded="true" signature="154:203" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:236" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:263" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:290" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:292" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:293" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:299" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="742:753" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="840:875" ph="SELECT * FRO... seance" />
+            <marker date="1504526938334" expanded="true" signature="1236:1278" ph="SELECT * FRO... row_seat" />
+            <marker date="1504526938334" expanded="true" signature="1236:1279" ph="SELECT * FRO... row_seat" />
+            <marker date="1504526938334" expanded="true" signature="1758:2089" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="1807:2049" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="2193:2536" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="2242:2496" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="2891:3004" ph="SELECT showi... movie_showing" />
+            <marker date="1504526938334" expanded="true" signature="2951:3000" ph="SELECT `movi... seance" />
+            <marker date="1504526938334" expanded="true" signature="2951:3003" ph="SELECT `movi... seance" />
+            <marker date="1504526938334" expanded="true" signature="3219:3773" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="3250:3568" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="3370:3462" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="3370:3559" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="3594:3764" ph="..." />
           </folding>
         </state>
       </provider>
@@ -309,16 +490,16 @@
         <state relative-caret-position="578">
           <caret line="34" column="55" lean-forward="false" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="55" />
           <folding>
-            <marker date="1504111362032" expanded="true" signature="122:142" ph="SELECT * FRO... cinema" />
-            <marker date="1504111362032" expanded="true" signature="254:267" ph="..." />
-            <marker date="1504111362032" expanded="true" signature="268:1221" ph="..." />
-            <marker date="1504111362032" expanded="true" signature="303:982" ph="data:" />
-            <marker date="1504111362032" expanded="true" signature="1031:1059" ph="..." />
-            <marker date="1504111362032" expanded="true" signature="1031:1060" ph="..." />
-            <marker date="1504111362032" expanded="true" signature="1031:1146" ph="..." />
-            <marker date="1504111362032" expanded="true" signature="1031:1214" ph="..." />
-            <marker date="1504111362032" expanded="true" signature="1301:1336" ph="SELECT * FRO... cinema" />
-            <marker date="1504111362032" expanded="true" signature="1737:1848" ph="SELECT * FRO... movie_showing" />
+            <marker date="1504524763301" expanded="true" signature="122:142" ph="SELECT * FRO... cinema" />
+            <marker date="1504524763301" expanded="true" signature="254:267" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="268:1221" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="303:982" ph="data:" />
+            <marker date="1504524763301" expanded="true" signature="1031:1059" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="1031:1060" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="1031:1146" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="1031:1214" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="1301:1336" ph="SELECT * FRO... cinema" />
+            <marker date="1504524763301" expanded="true" signature="1737:1848" ph="SELECT * FRO... movie_showing" />
           </folding>
         </state>
       </provider>
@@ -336,9 +517,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1504111400878" expanded="true" signature="182:322" ph="SELECT cinem... seance" />
-            <marker date="1504111400878" expanded="true" signature="658:665" ph="SELECT cinem... seance" />
-            <marker date="1504111400878" expanded="true" signature="658:706" ph="SELECT * FRO... seance" />
+            <marker date="1504526668152" expanded="true" signature="182:343" ph="SELECT cinem... seance" />
+            <marker date="1504526668152" expanded="true" signature="679:757" ph="SELECT * FRO... seance" />
           </folding>
         </state>
       </provider>
@@ -356,9 +536,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1504111400878" expanded="true" signature="182:322" ph="SELECT cinem... seance" />
-            <marker date="1504111400878" expanded="true" signature="658:665" ph="SELECT cinem... seance" />
-            <marker date="1504111400878" expanded="true" signature="658:706" ph="SELECT * FRO... seance" />
+            <marker date="1504526668152" expanded="true" signature="182:343" ph="SELECT cinem... seance" />
+            <marker date="1504526668152" expanded="true" signature="679:757" ph="SELECT * FRO... seance" />
           </folding>
         </state>
       </provider>
@@ -504,21 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/guest/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="136" column="30" lean-forward="false" selection-start-line="136" selection-start-column="30" selection-end-line="136" selection-end-column="30" />
-          <folding>
-            <marker date="1503946971677" expanded="true" signature="5526:5730" ph="..." />
-            <marker date="1503946971677" expanded="false" signature="5634:5641" ph="×" />
-            <marker date="1503946971677" expanded="true" signature="6074:6269" ph="..." />
-            <marker date="1503946971677" expanded="false" signature="6181:6188" ph="×" />
-            <marker date="1503946971677" expanded="true" signature="6345:6536" ph="..." />
-            <marker date="1503946971677" expanded="false" signature="6451:6458" ph="×" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/guest/rejestracja.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -577,68 +741,101 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
           <caret line="133" column="19" lean-forward="false" selection-start-line="133" selection-start-column="19" selection-end-line="133" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/guest/reservation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="75" lean-forward="false" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
+        <state relative-caret-position="272">
+          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
           <folding>
-            <marker date="1504111400878" expanded="true" signature="182:322" ph="SELECT cinem... seance" />
-            <marker date="1504111400878" expanded="true" signature="658:665" ph="SELECT cinem... seance" />
-            <marker date="1504111400878" expanded="true" signature="658:706" ph="SELECT * FRO... seance" />
+            <marker date="1504526668152" expanded="true" signature="182:343" ph="SELECT cinem... seance" />
+            <marker date="1504526668152" expanded="true" signature="679:757" ph="SELECT * FRO... seance" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/guest/cinema.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="34" column="61" lean-forward="true" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
+        <state relative-caret-position="340">
+          <caret line="20" column="48" lean-forward="false" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
           <folding>
-            <marker date="1504111362032" expanded="true" signature="122:142" ph="SELECT * FRO... cinema" />
-            <marker date="1504111362032" expanded="true" signature="254:267" ph="..." />
-            <marker date="1504111362032" expanded="true" signature="268:1221" ph="..." />
-            <marker date="1504111362032" expanded="true" signature="303:982" ph="data:" />
-            <marker date="1504111362032" expanded="true" signature="1031:1059" ph="..." />
-            <marker date="1504111362032" expanded="true" signature="1031:1060" ph="..." />
-            <marker date="1504111362032" expanded="true" signature="1031:1146" ph="..." />
-            <marker date="1504111362032" expanded="true" signature="1031:1214" ph="..." />
-            <marker date="1504111362032" expanded="true" signature="1301:1336" ph="SELECT * FRO... cinema" />
-            <marker date="1504111362032" expanded="true" signature="1737:1848" ph="SELECT * FRO... movie_showing" />
+            <marker date="1504524763301" expanded="true" signature="122:142" ph="SELECT * FRO... cinema" />
+            <marker date="1504524763301" expanded="true" signature="254:267" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="268:1221" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="303:982" ph="data:" />
+            <marker date="1504524763301" expanded="true" signature="1031:1059" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="1031:1060" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="1031:1146" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="1031:1214" ph="..." />
+            <marker date="1504524763301" expanded="true" signature="1301:1336" ph="SELECT * FRO... cinema" />
+            <marker date="1504524763301" expanded="true" signature="1737:1848" ph="SELECT * FRO... movie_showing" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/guest/room.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="53" column="33" lean-forward="false" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+        <state relative-caret-position="374">
+          <caret line="22" column="41" lean-forward="true" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
           <folding>
-            <marker date="1504111490550" expanded="true" signature="105:154" ph="SELECT id FR... reservation_seat" />
-            <marker date="1504111490550" expanded="true" signature="105:187" ph="SELECT id FR... reservation_seat" />
-            <marker date="1504111490550" expanded="true" signature="105:214" ph="SELECT id FR... reservation_seat" />
-            <marker date="1504111490550" expanded="true" signature="105:241" ph="SELECT id FR... reservation_seat" />
-            <marker date="1504111490550" expanded="true" signature="105:243" ph="SELECT id FR... reservation_seat" />
-            <marker date="1504111490550" expanded="true" signature="105:244" ph="SELECT id FR... reservation_seat" />
-            <marker date="1504111490550" expanded="true" signature="105:250" ph="SELECT id FR... reservation_seat" />
-            <marker date="1504111490550" expanded="true" signature="694:705" ph="..." />
-            <marker date="1504111490550" expanded="true" signature="792:827" ph="SELECT * FRO... seance" />
-            <marker date="1504111490550" expanded="true" signature="1188:1230" ph="SELECT * FRO... row_seat" />
-            <marker date="1504111490550" expanded="true" signature="1188:1231" ph="SELECT * FRO... row_seat" />
-            <marker date="1504111490550" expanded="true" signature="1711:2042" ph="..." />
-            <marker date="1504111490550" expanded="true" signature="1760:2002" ph="..." />
-            <marker date="1504111490550" expanded="true" signature="2146:2489" ph="..." />
-            <marker date="1504111490550" expanded="true" signature="2195:2449" ph="..." />
-            <marker date="1504111490550" expanded="true" signature="2844:2955" ph="SELECT showi... movie_showing" />
-            <marker date="1504111490550" expanded="true" signature="2904:2954" ph="SELECT `movi... seance" />
-            <marker date="1504111490550" expanded="true" signature="3170:3724" ph="..." />
-            <marker date="1504111490550" expanded="true" signature="3201:3519" ph="..." />
-            <marker date="1504111490550" expanded="true" signature="3321:3413" ph="..." />
-            <marker date="1504111490550" expanded="true" signature="3321:3510" ph="..." />
-            <marker date="1504111490550" expanded="true" signature="3545:3715" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="154:203" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:236" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:263" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:290" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:292" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:293" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="154:299" ph="SELECT id FR... reservation_seat" />
+            <marker date="1504526938334" expanded="true" signature="742:753" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="840:875" ph="SELECT * FRO... seance" />
+            <marker date="1504526938334" expanded="true" signature="1236:1278" ph="SELECT * FRO... row_seat" />
+            <marker date="1504526938334" expanded="true" signature="1236:1279" ph="SELECT * FRO... row_seat" />
+            <marker date="1504526938334" expanded="true" signature="1758:2089" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="1807:2049" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="2193:2536" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="2242:2496" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="2891:3004" ph="SELECT showi... movie_showing" />
+            <marker date="1504526938334" expanded="true" signature="2951:3000" ph="SELECT `movi... seance" />
+            <marker date="1504526938334" expanded="true" signature="2951:3003" ph="SELECT `movi... seance" />
+            <marker date="1504526938334" expanded="true" signature="3219:3773" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="3250:3568" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="3370:3462" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="3370:3559" ph="..." />
+            <marker date="1504526938334" expanded="true" signature="3594:3764" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user/rezerwacja.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/guest/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="72" lean-forward="false" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
+          <folding>
+            <marker date="1504632911541" expanded="true" signature="5521:5725" ph="..." />
+            <marker date="1504632911541" expanded="false" signature="5629:5636" ph="×" />
+            <marker date="1504632911541" expanded="true" signature="6069:6264" ph="..." />
+            <marker date="1504632911541" expanded="false" signature="6176:6183" ph="×" />
+            <marker date="1504632911541" expanded="true" signature="6340:6531" ph="..." />
+            <marker date="1504632911541" expanded="false" signature="6446:6453" ph="×" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user/reservation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1504526668152" expanded="true" signature="182:343" ph="SELECT cinem... seance" />
+            <marker date="1504526668152" expanded="true" signature="679:757" ph="SELECT * FRO... seance" />
           </folding>
         </state>
       </provider>
