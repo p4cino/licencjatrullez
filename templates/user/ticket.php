@@ -51,25 +51,26 @@
       <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
         <div class="card-block">
           <ul class="list-group">
-<!--            --><?php
-//            $db = DataBase::getDB();
-//            $zap = $db->query("SELECT `id`,`data` FROM `rezerwacje` WHERE id_uzytkownika = ".$User->getId()." AND `data` >= NOW() AND potwierdzenie = 1");
-//            $ile = false;
-//            while($tab = $zap->fetch()){
-//              $ile = true;
-//              echo '
-//              <li class="list-group-item">
-//                '.$tab['data'].'
-//                <a href="rezerwacje/'.$tab['id'].'" class="btn btn-sm btn-outline-danger mx-2">Anuluj <i class="fa fa-times"></i></a>
-//              </li>';
-//            }
-//            if (!$ile) {
-//              echo '
-//              <li class="list-group-item">
-//                <strong>Brak aktywnych rezerwacji</strong>
-//              </li>';
-//            }
-//            ?>
+            <?php
+            $db = DataBase::getDB();
+            $aktualna = new DateTime();
+            $zap = $db->query("SELECT reservation.id, reservation_seat.reservation_date FROM reservation INNER JOIN reservation_seat ON reservation.id = reservation_seat.seat_number WHERE reservation_seat.reservation_date >= '".$aktualna->format("Y-m-d")."' AND  reservation.user_id = ".$User->getId());
+            $ile = false;
+            while($tab = $zap->fetch()){
+              $ile = true;
+              echo '
+              <li class="list-group-item">
+                '.$tab['reservation_date'].'
+                <a href="rezerwacje/'.$tab['id'].'" class="btn btn-sm btn-outline-danger mx-2">Anuluj <i class="fa fa-times"></i></a>
+              </li>';
+            }
+            if (!$ile) {
+              echo '
+              <li class="list-group-item">
+                <strong>Brak aktywnych rezerwacji</strong>
+              </li>';
+            }
+            ?>
           </ul>
         </div>
       </div>
@@ -85,6 +86,26 @@
       <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
         <div class="card-block">
           <ul class="list-group">
+              <?php
+              $db = DataBase::getDB();
+              $aktualna = new DateTime();
+              $zap = $db->query("SELECT reservation.id, reservation_seat.reservation_date FROM reservation INNER JOIN reservation_seat ON reservation.id = reservation_seat.seat_number WHERE reservation_seat.reservation_date < '".$aktualna->format("Y-m-d")."' AND  reservation.user_id = ".$User->getId());
+              $ile = false;
+              while($tab = $zap->fetch()){
+                  $ile = true;
+                  echo '
+              <li class="list-group-item">
+                '.$tab['reservation_date'].'
+                <a href="rezerwacje/'.$tab['id'].'" class="btn btn-sm btn-outline-danger mx-2">Anuluj <i class="fa fa-times"></i></a>
+              </li>';
+              }
+              if (!$ile) {
+                  echo '
+              <li class="list-group-item">
+                <strong>Brak aktywnych rezerwacji</strong>
+              </li>';
+              }
+              ?>
           </ul>
         </div>
       </div>

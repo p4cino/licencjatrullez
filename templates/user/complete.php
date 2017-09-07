@@ -28,13 +28,11 @@
                         <input type="hidden" name="room" value="'.$_POST['room'].'">';
             echo "<button class=\"btn btn-primary\">Zatwierdź</button></form>";
 
-            print_r($_POST);
         }
         else
         {
             $i = 0;
         foreach ($_POST['m'] as $value) {
-            print_r($_POST);
             $db = DataBase::getDB();
             $array = explode(",", $value);
             $zap = $db->prepare("INSERT INTO `reservation` (user_id, reservation_made_date) VALUES (:id, NOW())");
@@ -59,17 +57,22 @@
             $zap->bindValue(":date", $_POST['date'], PDO::PARAM_STR);
             $zap->execute();
 
+            $zap = $db->prepare("SELECT * FROM ticket WHERE id = :id");
+            $zap->bindValue(":id", $_POST['ticket'][$i], PDO::PARAM_INT);
+            $zap->execute();
+            $tab = $zap->fetch(PDO::FETCH_ASSOC);
+
             $reservationSeat = $db->lastInsertId();
-            //id rezerwacji miejsca
             $zap = $db->prepare("INSERT INTO `reservation_ticket` (ticket_type, reservation_seat, ticket_value) VALUES (:id, :reservation, 22)");
             $zap->bindValue(":id", $_POST['ticket'][$i], PDO::PARAM_INT);
             $zap->bindValue(":reservation", $reservationSeat, PDO::PARAM_INT);
+            $zap->bindValue(":reservation", $tab['value'], PDO::PARAM_INT);
             $zap->execute();
-
             $i++;
-
-
         }
+            echo '<div class="alert alert-success m-0" role="alert">
+				<strong>Sukces!</strong> Zarezerwowano miejsca!
+			</div>';
         }
         ?>
     </div>
