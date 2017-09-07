@@ -15,7 +15,7 @@
 	<!--Ikonki glyphicons-->
 	<link rel="stylesheet" href="./layout/fonts/font-awesome.min.css">
 	<!--Style modyfikujące-->
-	<link rel="stylesheet" href="./layout/css/style.css">
+    <link rel="stylesheet" href="./layout/style1.css">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#rozwin" aria-controls="rozwin" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<a class="navbar-brand" href="#"><i class="fa fa-bullseye"></i>BowlingClub</a>
+		<a class="navbar-brand" href="#"><i class="fa fa-bullseye"></i>Cinema</a>
 
 		<div class="collapse navbar-collapse" id="rozwin">
 
@@ -37,6 +37,9 @@
 				<li class="nav-item">
 					<a class="nav-link" href="ticket">Twoje Bilety</a>
 				</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cinema">Lista Kin</a>
+                </li>
 			</ul>
 
 			<form class="form-inline my-2 my-lg-0">

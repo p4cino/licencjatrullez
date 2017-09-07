@@ -1,8 +1,8 @@
 <?php
-function czyZajete($r, $j, $seance, $room) //$data dodać przy połączeniu tabeli reservation
+function czyZajete($r, $j, $seance, $room, $date) //$data dodać przy połączeniu tabeli reservation
 {
     $db = DataBase::getDB();
-    $zap = $db->prepare("SELECT id FROM reservation_seat WHERE seance_id = ".$seance." AND cinema_room_id = ".$room." AND row_number = " . $r . " AND seat_number = " . $j);
+    $zap = $db->prepare("SELECT id FROM reservation_seat WHERE seance_id = ".$seance." AND cinema_room_id = ".$room." AND row_number = " . $r . " AND reservation_date = '" . $date . "' AND seat_number = " . $j);
     $zap->execute();
     $user = $zap->fetchAll(PDO::FETCH_COLUMN, 0);
     if (count($user) == 1) {
@@ -14,12 +14,16 @@ function czyZajete($r, $j, $seance, $room) //$data dodać przy połączeniu tabe
 ?>
 <div class="container">
     <div class="rows">
-        <form action="" method="POST">
             <?php
             $db = DataBase::getDB();
             $aktualna = new DateTime();
             if (isset($_POST['date']) && !empty($_POST['date'])) {
+
                 echo '<div class="screen">Ekran</div>';
+                echo '<form action="complete" method="POST">
+                        <input type="hidden" name="date" value="'.$_POST['date'].'">
+                        <input type="hidden" name="seance" value="'.$_GET['s2'].'">
+                        <input type="hidden" name="room" value="'.$_GET['s3'].'">';
                 if (isset($_GET['s2'])) {
                     $zap = $db->prepare("SELECT * FROM seance WHERE id = :id");
                     $zap->bindValue(":id", $_GET['s2'], PDO::PARAM_STR);
@@ -35,7 +39,7 @@ function czyZajete($r, $j, $seance, $room) //$data dodać przy połączeniu tabe
                             $i = $tab['seat_count'];
                             echo "<strong>" . $r . "</strong> ";
                             for ($j = 1; $j <= $tab['seat_count']; $j++) {
-                                if (czyZajete($r, $j, $_GET['s2'], $_GET['s3'])) {
+                                if (czyZajete($r, $j, $_GET['s2'], $_GET['s3'], $_POST['date'])) {
                                     echo '<div class="seat">
                         <div class="squaredOne">
                             <input type="checkbox" value="" id="squaredOne' . $r . ',' . $j . '" name="box_tablica[]"  disabled>
@@ -78,7 +82,6 @@ function czyZajete($r, $j, $seance, $room) //$data dodać przy połączeniu tabe
 		</div>
 	</form>';
             }
-            print_r($_POST);
             ?>
     </div>
 </div>

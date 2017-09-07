@@ -56,7 +56,8 @@ function czyZajete($r, $j, $seance, $room) //$data dodać przy połączeniu tabe
                         }
                     }
                 }
-                echo '<button class="btn btn-primary">Dalej</button>
+                echo 'Aby zarezerwować bilet musisz być zalogowany <br/>
+<a href="#" class="btn btn-outline-info mx-2" data-toggle="modal" data-target=".bd-example-modal-sm" >Logowanie</a>
         </form>';
             } else {
                 $zap = $db->prepare("SELECT showing_to_date FROM movie_showing WHERE movie_id = (SELECT `movie_showing_id` from seance where id = :id) ");
@@ -78,7 +79,6 @@ function czyZajete($r, $j, $seance, $room) //$data dodać przy połączeniu tabe
 		</div>
 	</form>';
             }
-            print_r($_POST);
             ?>
     </div>
 </div>
